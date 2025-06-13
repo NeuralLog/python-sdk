@@ -59,7 +59,7 @@ config = NeuralLogConfig(
     # Required settings
     server_url="https://logs.example.com",
     namespace="production",
-    
+
     # Optional settings
     api_key="your-api-key",
     batch_size=100,
@@ -68,11 +68,11 @@ config = NeuralLogConfig(
     retry_backoff_ms=1000,
     async_enabled=True,
     debug_enabled=False,
-    
+
     # HTTP client settings
     timeout_ms=30000,
     max_connections=10,
-    
+
     # Custom HTTP headers
     headers={
         "X-Custom-Header": "value"
@@ -150,6 +150,29 @@ pip install -e .
 # Run the tests
 python -m unittest discover tests
 ```
+
+## Documentation
+
+Detailed documentation is available in the [docs](./docs) directory:
+
+- [API Reference](./docs/api.md)
+- [Configuration](./docs/configuration.md)
+- [Architecture](./docs/architecture.md)
+- [Examples](./docs/examples)
+
+For integration guides and tutorials, visit the [NeuralLog Documentation Site](https://neurallog.github.io/docs/).
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Related NeuralLog Components
+
+- [NeuralLog Auth](https://github.com/NeuralLog/auth) - Authentication and authorization
+- [NeuralLog Server](https://github.com/NeuralLog/server) - Core server functionality
+- [NeuralLog Web](https://github.com/NeuralLog/web) - Web interface components
+- [NeuralLog TypeScript Client SDK](https://github.com/NeuralLog/typescript-client-sdk) - TypeScript client SDK
+- [NeuralLog Java Client SDK](https://github.com/NeuralLog/Java-client-sdk) - Java client SDK
 
 ## License
 
